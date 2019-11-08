@@ -94,7 +94,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/g4-common/bluetooth
 USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
-    /system/vendor/bin/mm-qcamera-daemon=24
+    /vendor/bin/mm-qcamera-daemon=24
 
 # Display
 HAVE_ADRENO_SOURCE := false
