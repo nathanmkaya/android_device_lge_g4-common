@@ -37,6 +37,10 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 include $(LOCAL_PATH)/product/*.mk
 
+# OTA server
+PRODUCT_PROPERTY_OVERRIDES += \
+    lineage.updater.uri=http://sfxota.binbash.rocks:8009/lineage/15.1/api/v1/{device}/{type}/{incr}
+
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
